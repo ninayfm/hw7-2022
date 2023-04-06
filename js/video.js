@@ -56,7 +56,7 @@ mute.addEventListener("click", function() {
 var slider = document.getElementById("slider");
 slider.addEventListener("change", function() {
 	vol.innerHTML = this.value + "%";
-	vid.volume = slider.value;
+	vid.volume = this.value/100;
 })
 
 var styled = document.getElementById("vintage");
